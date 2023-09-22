@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://w.wallhaven.cc/full/83/wallhaven-833e6y.jpg);
+    background-size: cover;
+    font-family: monospace;
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+#center{
+    display: flex; justify-content: center; align-items: center;text-align: center; width: 100%; height: 100vh;
+}
+
+#logId{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    position: relative;
+    width: 24rem;
+    height: 58vh;
+    background-color: rgba(212, 0, 255, 0.307); 
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.221);
+    border-radius: 6px;
+    backdrop-filter: blur(7px); /* Add the blur effect */
+    transition: transform 1s, box-shadow 1s
+}
+#logId:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.585);
+    transform:scale(1.1)
+}
+
+#LoginWord{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 3rem;
+    color: rgb(244, 187, 255);
+    
+}
+#inputOne{
+    display: block;
+    position: absolute;
+    top: 11rem;
+    left: 4.5rem;
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    box-shadow: none;
+    outline: none; /* Remove the outline when focused */
+    border-bottom: 1px solid white;
+    padding: 3px;
+    font-size: 1.2rem;
+    transition: top 0.5s;
+
+}
+
+#inputOne::placeholder{
+    color: rgb(216, 216, 216);
+    font-family: monospace;
+    transition: color 1s;
+}
+
+#inputOne:focus::placeholder, #inputOne:focus{
+    color:rgba(239, 239, 239, 0.371) ;
+    top:10.3rem
+}
+
+
+#inputTwo{
+    display: block;
+    position: absolute;
+    top: 16rem;
+    left: 4.5rem;
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    box-shadow: none;
+    outline: none; /* Remove the outline when focused */
+    border-bottom: 1px solid white;
+    padding: 3px;
+    font-size: 1.2rem;
+    transition: top 0.5s;
+}
+
+#inputTwo::placeholder{
+    color: rgb(216, 216, 216);
+    font-family: monospace;
+
+    transition: color 1s;
+}
+
+#inputTwo:focus::placeholder, #inputTwo:focus{
+    color:rgba(239, 239, 239, 0.371) ;
+    top:15.3rem
+}
+
+#submit{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 3rem;
+    top: 20rem;
+    left: 6.4rem;
+    border-radius: 8px;
+    background-color: rgba(0, 119, 255, 0.22);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.214);
+}
+h2{
+    font-size: 1.5rem;
+    color: rgb(216, 216, 216);
+}
+
+#text{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    left: 5%;
+}
+#Info{
+ 
+    font-size: 5rem;
+    color: rgb(216, 216, 216);
+
+}
+p{
+    position:absolute;
+    font-size: 1rem;
+    top: 100%;
+    color: rgb(216, 216, 216);
+}
+
+
+
+
+@media (max-width: 992px) {
+    #logId{
+        transform: scale(1.2)
+    }
+
+    #logId:hover{
+        transform:scale(1.3)
+    }
+    #text{
+        bottom: 0%;
+        left: 35%;
+        align-items: end;
+        text-align: center;
+    }
+    #Info{
+        font-size: 4rem;
+        text-align: center;
+        
+    }
+
+    p{
+        
+        font-size: 1rem;
+        color: rgb(216, 216, 216);
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    #logId{
+        transform: scale(1.2)
+    }
+
+    #logId:hover{
+        transform:scale(1.3)
+    }
+    #text{
+        bottom: 0%;
+        left: 28%; 
+        justify-content: center;
+        align-items: end;
+    }
+    #Info{
+        font-size: 4rem;
+        
+    }
+
+}
